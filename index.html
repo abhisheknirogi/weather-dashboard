@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Weather Dashboard</title>
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>Weather Dashboard</h1>
+  <div class="app">
+    <header>
+      <h1>Weather Dashboard</h1>
+      <div class="search">
+        <input type="text" id="cityInput" placeholder="Search city, e.g. London">
+        <button id="searchBtn">Search</button>
+      </div>
+    </header>
 
-    <div class="search-box">
-      <input type="text" id="cityInput" placeholder="Enter city name">
-      <button id="searchBtn">Search</button>
-    </div>
+    <main>
+      <section id="currentWeather" class="weather-card"></section>
+      <h2 class="forecast-title">5-Day Forecast</h2>
+      <section id="forecast" class="forecast-grid"></section>
+      <p id="errorMsg" class="error"></p>
+    </main>
 
-    <div id="currentWeather" class="weather-card"></div>
-    <div id="forecast" class="forecast-grid"></div>
-
-    <p id="errorMsg" class="error"></p>
+    <footer>
+      <p>Data by <a href="https://openweathermap.org" target="_blank">OpenWeatherMap</a></p>
+    </footer>
   </div>
 
   <script src="script.js"></script>
