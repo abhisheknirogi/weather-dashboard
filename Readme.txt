@@ -1,4 +1,6 @@
-# 🌦️ Weather Dashboard
+This is a Project for Jasnav
+
+#  Weather Dashboard
 
 A simple and elegant **Weather Dashboard** web app built using **HTML, CSS, and JavaScript**.  
 It allows users to search for any city and view the **current weather conditions** such as temperature, humidity, and weather description with matching icons — all in a clean, minimal UI.
